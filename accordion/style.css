@@ -1,0 +1,39 @@
+.test {
+    padding-right: 30px;
+}
+
+.accordion>div>span {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.accordion>div>span:after {
+    content: "\002b";
+    float: right;
+}
+
+.accordion>div.show>span:after {
+    content: "\2212";
+    float: right;
+}
+
+.accordion>div>span:hover,
+.accordion>div.show>span {
+    background-color: #ccc;
+}
+
+.accordion>div>div {
+    width: 99.8%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.accordion>div.show>div {
+    padding: 15px;
+}
